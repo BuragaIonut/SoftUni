@@ -1,10 +1,8 @@
 import re
-
 text = input()
 
-pattern = '[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-\.]+\.[a-zA-Z]'
+patern = "(\s[a-z0-9]+[_.-]?[a-z0-9]+@[a-z\-]+[.]{1}[a-z]+\.[a-z]+|\s[a-z0-9]+[_.-]?[a-z0-9]+@[a-z\-]+\.[a-z]+)"
 
-emails = re.findall(pattern, text)
+emails = re.findall(patern, text)
 
-for email in emails:
-    print(email)
+[print (x) for x in emails]
