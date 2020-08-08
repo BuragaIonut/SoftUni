@@ -10,7 +10,7 @@ for i in range(messages):
     count = 0
     new_line = []
     for j in range(len(line)):
-        if line[j] == 's' or line[j] == 't' or line[j] == 'a' or line[j] == 'r' or line[j] == 'S' or line[j] == 'T' or line[j] == 'A' or line[j] == 'R':
+        if line[j] in ['s', 't', 'a', 'r', 'S', 'T', 'A', 'R']:
             count += 1
     for k in range(len(line)):
         letter = line[k]
