@@ -1,5 +1,6 @@
 import re
 total_income = 0
+
 while True:
     line = input()
     if line == 'end of shift':
