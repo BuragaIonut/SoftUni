@@ -1,0 +1,1 @@
+result = [print(x) for x in list(word for word in input().split() if len(word) % 2 == 0)]
