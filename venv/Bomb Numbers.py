@@ -1,6 +1,7 @@
 numbers = list(map(int, input().split()))
 bomb, power = list(map(int, input().split()))
 
+
 while bomb in numbers:
     index = numbers.index(bomb)
     left_range = max(0, index - power)
